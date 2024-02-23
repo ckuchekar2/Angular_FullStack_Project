@@ -1,0 +1,12 @@
+.form-box {
+    border: 1px solid black;
+    /* margin: 30px; */
+    padding: 20px;
+    width: 40%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(217, 238, 180);
+    box-shadow: 4px 4px 4px;
+}

@@ -1,0 +1,19 @@
+<div class="form-box position-absolute top-50 start-50 translate-middle" style="border: 1px solid black; padding: 30px; border-radius: 10px; background-color: #bff0ea; box-shadow: 4px 4px 4px;">
+    <form class="mx-5" [formGroup]="postDataForm">
+        <h3 style="text-align: center; margin-bottom: 30px; font-weight: bold;">Post DATA of employee</h3>
+        <div class="mb-3 ">
+          <label for="exampleInputEmail1" class="form-label">Emplyoees name:</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contact</label>
+          <input type="text" class="form-control" formControlName="contact">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Salary</label>
+            <input type="number" class="form-control" formControlName="salary">
+          </div>
+        <button type="submit" class="btn btn-primary" (click)="updateData()">Update</button>
+      </form>
+    
+</div>

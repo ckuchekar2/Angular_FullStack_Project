@@ -1,10 +1,12 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { PostDataComponent } from './components/post-data/post-data.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HttpClientModule, PostDataComponent, RouterModule, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
